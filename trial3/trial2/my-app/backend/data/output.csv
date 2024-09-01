@@ -1,0 +1,6 @@
+User,Tweet,Location,Date, predicted_disaster
+user1,Massive flood due to extreme rain in Al Madinah,Saudi Arabia,30.08.2024, flood
+user2,Heavy flood due to extreme rain in Bogo city,Philippines,01.09.2024, flood
+user3,Terrible flood due to extreme rainfall in India,India,31.08.2024, flood
+user4,Hurricane warning issued in Miami due to storm surge,USA,29.08.2024, Hurricane
+user5,Wildfire spreads rapidly due to dry conditions in California,USA,30.08.2024, Wildfire
