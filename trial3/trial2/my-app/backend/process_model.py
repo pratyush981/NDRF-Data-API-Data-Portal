@@ -8,7 +8,6 @@ import numpy as np
 print("Loading model from:", 'disasterfinal3.h5')
 loaded_model = load_model('disasterfinal3.h5')
 
-# Load and fit the tokenizer and label encoder on training data
 data = {
     'text': [
         "flood", "wildfire", "earthquake", "tornado", "tsunami", "hurricane", 
@@ -28,14 +27,12 @@ data = {
 
 df = pd.DataFrame(data)
 
-# Recreate the tokenizer and label encoder
 tokenizer = Tokenizer()
-tokenizer.fit_on_texts(df['text'])  # Fit the tokenizer on the same data used during training
+tokenizer.fit_on_texts(df['text'])  
 
 label_encoder = LabelEncoder()
 label_encoder.fit(df['label'])
 
-# Load the test data from CSV
 test_df = pd.read_csv('data/input.csv')
 
 print("Column names:", test_df.columns)
